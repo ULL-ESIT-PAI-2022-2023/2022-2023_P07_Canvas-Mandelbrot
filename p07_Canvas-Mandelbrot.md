@@ -18,7 +18,7 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Deben usarse estructuras de datos adecuadas para representar los diferentes elementos que intervienen en el problema
 * Ser capaz de desarrollar programas simples en TypeScript en el entorno Linux de la VM de la asignatura usando
   `ts-node`
-* Ser capaz de generar documentación para sus programas TypeScript utilizando
+* Ser capaz de generar documentación para sus programas TS utilizando
   [TypeDoc](https://typedoc.org/)
   y de visualizar dicha documentación en un servidor web
 * El alumnado debe ser capaz de resolver problemas tanto en JS como en TS en la plataforma Exercism subiendo sus soluciones a la misma
@@ -73,7 +73,7 @@ recurrencia:
 donde `z` y `c` son números complejos. 
 
 La función tiene la condición inicial `z = c` siendo `c` es un número complejo cualquiera.
-Lo que habitualmente se calcula es el número de iteraciones necesarias para que `z` alcance algún valor umbral
+Lo que habitualmente se calcula es el número de iteraciones necesarias para que el módulo de `z` alcance algún valor umbral
 que en el caso del conjunto de Mandelbrot es:
 
 `|z| > 2.0`
@@ -88,14 +88,13 @@ propone realizar.
 ### La clase *Mandelbrot*
 En esta práctica se propone desarrollar una clase `Mandelbrot` 
 que posibilite la visualización del conjunto y calcular su área.
-La clase ha de encapsularse en un módulo ES6 `mandelbrot.js`.
 
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
 [1] `http://10.6.129.123:8080/einstein-albert-mandelbrot.html`
 
-en la que se incustará un canvas para dibujar el conjunto.
+en la que se embeberá un lienzo (canvas) para dibujar el conjunto.
 Sustituya *Albert Einstein* por su nombre y apellido en la URL de su página
 y la dirección IP anterior por la correspondiente a su máquina IaaS.
 
@@ -104,7 +103,7 @@ El resultado de dicha visualización debiera ser similar (a falta del área y er
 [esta página](https://math.hws.edu/eck/js/mandelbrot/MB.html).
 
 No es necesario que invierta esfuerzo en la programación de los aspectos de esa página que no tienen relación
-con JavaScript. 
+con TypeScript. 
 Tanto HTML como CSS son aspectos que se estudiarán con cierto nivel de detalle en el futuro. 
 No se requiere que dedique esfuerzo a esos aspectos en esta práctica.
 Tampoco se propone en esta práctica que dote de interactividad a los elementos (botones, campos de texto,
@@ -112,12 +111,11 @@ selectores, etc.) que figuran en la página anterior, y que no son necesarios en
 
 Diseñe asimismo otra página HTML simple 
 
-[5] `http://10.6.129.123:8080/index.html`
+[2] `http://10.6.129.123:8080/index.html`
 
 que sirva de "página índice" para los ejercicios de la sesión de evaluación de la práctica.
 La página [1] será uno de los enlaces de [2] y a su vez [1] tendrá un enlace "Home" que apunte a [2].
-Enlace también en la página índice [2] las páginas que contienen los informes de documentación y de
-cubrimiento de código de su proyecto.
+Enlace también en la página índice [2] la página que contiene la documentación de su proyecto.
 
 ## Visualización del conjunto
 
@@ -143,7 +141,7 @@ Cada punto será iterado usando la ecuación de recurrencia
 `z = z^2 + c`
 hasta un determinado límite (digamos hasta 10000). 
 Ese número de iteraciones es el que se elige en el selector *MaxIterations* en la 
-[página](https://math.hws.edu/eck/js/mandelbrot/MB.html).
+[página de referencia](https://math.hws.edu/eck/js/mandelbrot/MB.html).
 Si dentro de ese número de iteraciones se cumple la condición de umbral, entonces ese punto se considera 
 fuera (no perteneciente) del Conjunto de Mandelbrot. 
 Al contabilizar el número de puntos aleatorios dentro del conjunto y los que están fuera, se obtiene
@@ -176,6 +174,15 @@ canvas en una esquina del área de dibujo.
 
 Nótese que el número de puntos `N` que el programa utilice para calcular el área es un parámetro
 que de algún modo habrá que configurar.
+
+Tenga en cuenta igualmente que el dibujo del conjunto y el cálculo del área son procesos independientes: para
+dibujar el conjunto habrá que comprobar la pertenencia o no al mismo de cada uno de los puntos representado
+por un píxel de su canvas (`W` x `H` puntos si `W` y `H` son las dimensiones del canvas).
+El número de puntos utilizado para la estimación del área  es `N` pudiendo ser `N` un valor diferente de `W` x
+`H`.
+Cuanto mayor sea el valor de `N` elegido, mayor será la precisión que se obtenga en el cálculo del área.
+
+
 
 ## Referencias
 * [El Conjunto de Mandelbrot](https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot)
