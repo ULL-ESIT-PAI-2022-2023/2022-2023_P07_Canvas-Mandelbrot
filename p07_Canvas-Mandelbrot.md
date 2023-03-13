@@ -1,18 +1,19 @@
-# Práctica 7. La API Canvas. El conjunto de Mandelbrot
-### Factor de ponderación: 6
+# Práctica 7. Programación Gráfica en TypeScript. La API Canvas. El conjunto de Mandelbrot
+### Factor de ponderación: 7
 
 ### Objetivos
-Los objetivos de esta práctica son:
-* Poner en práctica metodologías y conceptos de Diseño y Programación Orientada a Objetos en TypeScript.
-* Poner en práctica Principios y Buenas prácticas de programación Orientada a Objetos.
+Los objetivos de esta tarea son poner en práctica:
+* Conceptos básicos de Programación Gráfica en TypeScript usando la API Canvas.
+* Metodologías y conceptos de diseño y Programación Orientada a Objetos en TypeScript.
+* Principios y Buenas prácticas de programación Orientada a Objetos.
 
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará la realización de las diferentes tareas que se proponen
-* El comportamiento del programa debe ajustarse a lo solicitado en este enunciado.
-* Capacidad de la programadora de introducir cambios en el programa desarrollado.
-* Conocer y poner en prácticas los principios y buenas prácticas de programación orientada a objetos.
+* El comportamiento del programa debe ajustarse a lo descrito en este documento
+* Capacidad de la programadora de introducir cambios en el programa desarrollado
+* Se acredita conocimiento y puesta en práctica de principios y buenas prácticas de programación orientada a objetos
 * Saber corregir bugs en sus programas utilizando el depurador de Visual Studio Code
 * Deben usarse estructuras de datos adecuadas para representar los diferentes elementos que intervienen en el problema
 * Ser capaz de desarrollar programas simples en TypeScript en el entorno Linux de la VM de la asignatura usando
@@ -20,17 +21,17 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Ser capaz de generar documentación para sus programas TypeScript utilizando
   [TypeDoc](https://typedoc.org/)
   y de visualizar dicha documentación en un servidor web
-* El alumnado debe ser capaz de resolver problemas tanto en JS como en TS en la plataforma Exercism subiendo sus soluciones a la misma.
+* El alumnado debe ser capaz de resolver problemas tanto en JS como en TS en la plataforma Exercism subiendo sus soluciones a la misma
 * Ser capaz de desarrollar tests unitarios para sus programas utilizando
   [Jest](https://jestjs.io/)
 * Acreditar su capacidad para configurar y utilizar 
   [ESLint](https://eslint.org/)
-y que es capaz de trabajar con la misma en Visual Studio Code.
+y que es capaz de trabajar con la misma en Visual Studio Code
 * Acreditar que conoce las etiquetas de 
   [JSDoc](https://jsdoc.app/)
 * Acreditar que es capaz de generar documentación para sus programas utilizando
   [TypeDoc](https://typedoc.org/)
-y que es capaz de generar documentación para sus programas utilizando la herramienta.
+y que es capaz de generar documentación para sus programas utilizando la herramienta
 * El alumnado ha de acreditar que es capaz de desarrollar programas de la plataforma Jutge
 * Se comprobará que el código que el alumnado escribe se adhiere a las reglas de las Guías de Estilo de Google
   para Javascript y/o TypeScript

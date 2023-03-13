@@ -1,12 +1,3 @@
-# Práctica 10. Programación Gráfica en JavaScript. La API Canvas. El conjunto de Mandelbrot.
-### Factor de ponderación: 9
-
-### Objetivos
-Los objetivos de esta tarea son poner en práctica:
-* Conceptos básicos de Programación Gráfica en JavaScript usando la API Canvas.
-* Metodologías y conceptos de Programación Orientada a Objetos en JavaScript.
-* Principios y Buenas prácticas de programación Orientada a Objetos.
-
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar esta práctica:
