@@ -1,7 +1,7 @@
 {
-  "name": "Práctica 6 de PAI",
+  "name": "Práctica 7 de PAI",
   "version": "1.0.0",
-  "description": "OO Design",
+  "description": "Canvas API. Mandelbrot set",
   "private": true,
   "main": "index.js",
   "scripts": {
