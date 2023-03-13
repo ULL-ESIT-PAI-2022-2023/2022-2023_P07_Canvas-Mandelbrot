@@ -39,9 +39,10 @@ y que es capaz de generar documentación para sus programas utilizando la herram
 * Acreditar que es capaz de editar ficheros de forma remota en su VM usando Visual Studio Code
 
 ### Indicaciones de caracter general
+
 Todos los programas que desarrolle han de ser orientados a objetos.
 Ponga en práctica los principios de abstracción y encapsulamiento característicos 
-de la OOP así como las buenas prácticas y principios que han sido expuestos en las clases de la asignatura.
+de la OOP así como las buenas prácticas, principios y patrones que han sido expuestos en las clases de la asignatura.
 
 Encapsule las clases en módulos que exporten la correspondiete clase hacia otros programas clientes que pudieran utilizarla.
 
@@ -49,29 +50,13 @@ Previo a la implementación de cada clase, diseñe y desarrolle un conjunto de t
 funcionamiento de todos los métodos que desarrolle.
 
 Configure para esta práctica una página web que sirva de índice para mostrar la documentación generada por
-TypeDoc para algunos de los ejercicios de la práctica.
+TypeDoc para el ejercicio que se propone.
 
-Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su de cada uno de sus ejercicios, 
+Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su ejercicio, 
 de modo que ejecutando `npm install` queden instaladas todas las dependencias del proyecto.
 
-### Trabajo previo
-Estudie las transparencias y ejemplos de los trabajos expuestos en clase sobre 
-[Principios de Diseño Orientado a Objetos](https://campusingenieriaytecnologia2223.ull.es/mod/url/view.php?id=27637)
-y
-[Principios SOLID](https://campusingenieriaytecnologia2223.ull.es/mod/url/view.php?id=27638).
-
-Estudie igualmente las secciones correspondientes a 
-[Arrays](https://javascript.info/array),
-[Array methods](https://javascript.info/array-methods),
-[Iterables](https://javascript.info/iterable)
-y
-[Strings](https://javascript.info/string)
-del Modern JavaScript Tutorial para repasar la forma de trabajar en JS/TS con estas estructuras de datos.
-
-Cuando desarrolle los siguientes ejercicios, ante la presencia de cualquier bug (o incluso en ausencia de
-errores) practique el uso del 
-[depurador integrado en Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
-
+En el desarrollo de esta práctica, utilice el depurador integrado en el navegador para confirmar que el flujo
+de ejecución de su programa es el correcto.
 
 ### El conjunto de Mandelbrot
 
