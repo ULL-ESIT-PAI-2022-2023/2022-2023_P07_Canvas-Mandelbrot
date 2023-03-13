@@ -44,8 +44,6 @@ Todos los programas que desarrolle han de ser orientados a objetos.
 Ponga en práctica los principios de abstracción y encapsulamiento característicos 
 de la OOP así como las buenas prácticas, principios y patrones que han sido expuestos en las clases de la asignatura.
 
-Encapsule las clases en módulos que exporten la correspondiete clase hacia otros programas clientes que pudieran utilizarla.
-
 Previo a la implementación de cada clase, diseñe y desarrolle un conjunto de tests para probar el correcto
 funcionamiento de todos los métodos que desarrolle.
 
@@ -181,8 +179,6 @@ por un píxel de su canvas (`W` x `H` puntos si `W` y `H` son las dimensiones de
 El número de puntos utilizado para la estimación del área  es `N` pudiendo ser `N` un valor diferente de `W` x
 `H`.
 Cuanto mayor sea el valor de `N` elegido, mayor será la precisión que se obtenga en el cálculo del área.
-
-
 
 ## Referencias
 * [El Conjunto de Mandelbrot](https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot)
